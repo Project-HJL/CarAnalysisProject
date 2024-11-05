@@ -70,12 +70,13 @@ const LoginPage = () => {
             <p>
               <label htmlFor="email">E-mail:</label>
               <input
-                type="text"
+                type="email"
                 name="email"
                 id="email"
                 placeholder="Digite seu e-mail..."
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required // Adicionando requisição ao campo
               />
             </p>
             <p className="password-field">
@@ -88,11 +89,13 @@ const LoginPage = () => {
                   placeholder="Digite uma senha..."
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  required // Adicionando requisição ao campo
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                   className="toggle-password"
+                  aria-label={showPassword ? 'Ocultar senha' : 'Mostrar senha'}
                 >
                   {showPassword ? '👁️' : '👁️‍🗨️'}
                 </button>

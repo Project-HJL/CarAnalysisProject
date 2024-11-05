@@ -22,10 +22,10 @@ const Card: React.FC<CardProps> = ({ imgSrc, name, rm, desc, githubLink, linkedi
             </h3>
             <div className="social">
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/placa-do-github.png" alt="perfil-github" width="50px" />
+                    <img src="/assets/placa-do-github.png" alt="perfil-github" width="50px" />
                 </a>
                 <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                    <img src="/src/assets/linkedin.png" alt="perfil-linkedin" width="50px" />
+                    <img src="/assets/linkedin.png" alt="perfil-linkedin" width="50px" />
                 </a>
             </div>
         </div>
@@ -36,7 +36,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, name, rm, desc, githubLink, linkedi
 const AlunosPage: React.FC = () => {
     const cardData = [
         {
-            imgSrc: '/src/assets/hassam.jpg',
+            imgSrc: '/assets/hassam.jpg',
             name: 'Hassan Chahine',
             rm: '556715',
             desc: 'Análise e Desenvolvimento de Sistemas',
@@ -44,7 +44,7 @@ const AlunosPage: React.FC = () => {
             linkedinLink: 'https://www.linkedin.com/in/hassan-chahine-2b60ba245/',
         },
         {
-            imgSrc: '/src/assets/joao.jpg',
+            imgSrc: '/assets/joao.jpg',
             name: 'João Victor dos Santos Barbosa',
             rm: '555446',
             desc: 'Análise e Desenvolvimento de Sistemas',
@@ -52,7 +52,7 @@ const AlunosPage: React.FC = () => {
             linkedinLink: 'https://www.linkedin.com/in/jo%C3%A3o-victor-santos-barbosa-514011286/',
         },
         {
-            imgSrc: '/src/assets/luccas.jpg',
+            imgSrc: '/assets/luccas.jpg',
             name: 'Luccas de Alencar Rufino',
             rm: '558253',
             desc: 'Análise e Desenvolvimento de Sistemas',

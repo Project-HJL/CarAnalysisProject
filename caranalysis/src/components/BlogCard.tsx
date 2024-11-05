@@ -4,7 +4,16 @@ import steeringWheelImg from '/src/assets/steering-wheel.png';
 import gasPumpImg from '/src/assets/gas-pump.png';
 import toolBoxImg from '/src/assets/tool-box.png';
 
-const sections = [
+// Definindo a interface para as seções
+interface Section {
+  link: string;
+  imgSrc: string;
+  altText: string;
+  title: string;
+  description: string;
+}
+
+const sections: Section[] = [
   {
     link: "/blog-page-limpeza",
     imgSrc: bucketImg,
@@ -35,7 +44,7 @@ const sections = [
   }
 ];
 
-const BlogCard = () => {
+const BlogCard: React.FC = () => {
   return (
     <>
       {sections.map((section, index) => (
@@ -59,4 +68,3 @@ const BlogCard = () => {
 };
 
 export default BlogCard;
-

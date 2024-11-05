@@ -4,10 +4,11 @@ import { OrbitControls, useGLTF } from '@react-three/drei';
 import '../index.css'; // Certifique-se de criar este arquivo CSS
 
 const CarModel: React.FC = () => {
-  const { scene } = useGLTF('../public/car.glb'); // Substitua pelo caminho do seu modelo GLTF
+  // Ajuste o caminho para carregar o modelo a partir da pasta public
+  const { scene } = useGLTF('/car.glb'); // Use o caminho correto para o modelo GLTF
 
   return (
-    <Canvas className="car-model-canvas"  style={{ height: '25rem', width: '100%' }}>
+    <Canvas className="car-model-canvas" style={{ height: '25rem', width: '100%' }}>
       {/* Luz Ambiente */}
       <ambientLight intensity={0.5} />
       
@@ -34,7 +35,7 @@ const CarModel: React.FC = () => {
   );
 };
 
-const CarAnalysysPage: React.FC = () => {
+const CarAnalysisPage: React.FC = () => {
   return (
     <div className="container-1">
       <div className="container-1-content-text">
@@ -56,4 +57,4 @@ const CarAnalysysPage: React.FC = () => {
   );
 };
 
-export default CarAnalysysPage;
+export default CarAnalysisPage;

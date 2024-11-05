@@ -1,4 +1,9 @@
 import React from 'react';
+import hassamImg from '/src/assets/hassam.jpg';
+import joaoImg from '/src/assets/joao.jpg';
+import luccasImg from '/src/assets/luccas.jpg';
+import githubIcon from '/src/assets/placa-do-github.png';
+import linkedinIcon from '/src/assets/linkedin.png';
 
 // Definindo a interface para as propriedades do Card
 interface CardProps {
@@ -22,10 +27,10 @@ const Card: React.FC<CardProps> = ({ imgSrc, name, rm, desc, githubLink, linkedi
             </h3>
             <div className="social">
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/placa-do-github.png" alt="perfil-github" width="50px" />
+                    <img src={githubIcon} alt="perfil-github" width="50px" />
                 </a>
                 <a href={linkedinLink} target="_blank" rel="noopener noreferrer">
-                    <img src="/assets/linkedin.png" alt="perfil-linkedin" width="50px" />
+                    <img src={linkedinIcon} alt="perfil-linkedin" width="50px" />
                 </a>
             </div>
         </div>
@@ -36,7 +41,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, name, rm, desc, githubLink, linkedi
 const AlunosPage: React.FC = () => {
     const cardData = [
         {
-            imgSrc: '/assets/hassam.jpg',
+            imgSrc: hassamImg,
             name: 'Hassan Chahine',
             rm: '556715',
             desc: 'Análise e Desenvolvimento de Sistemas',
@@ -44,7 +49,7 @@ const AlunosPage: React.FC = () => {
             linkedinLink: 'https://www.linkedin.com/in/hassan-chahine-2b60ba245/',
         },
         {
-            imgSrc: '/assets/joao.jpg',
+            imgSrc: joaoImg,
             name: 'João Victor dos Santos Barbosa',
             rm: '555446',
             desc: 'Análise e Desenvolvimento de Sistemas',
@@ -52,7 +57,7 @@ const AlunosPage: React.FC = () => {
             linkedinLink: 'https://www.linkedin.com/in/jo%C3%A3o-victor-santos-barbosa-514011286/',
         },
         {
-            imgSrc: '/assets/luccas.jpg',
+            imgSrc: luccasImg,
             name: 'Luccas de Alencar Rufino',
             rm: '558253',
             desc: 'Análise e Desenvolvimento de Sistemas',
